@@ -1,4 +1,4 @@
-package com.example.carrental;
+package com.bluebinaries.carrental;
 
 import org.junit.Test;
 

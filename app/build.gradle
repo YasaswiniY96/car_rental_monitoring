@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.carrental'
+    namespace 'com.bluebinaries.carrental'
     compileSdk 35
 
     defaultConfig {
-        applicationId "com.example.carrental"
+        applicationId "com.bluebinaries.carrental"
         minSdk 24
         targetSdk 35
         versionCode 1
@@ -37,4 +37,9 @@ dependencies {
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
+
+    implementation 'com.google.firebase:firebase-messaging:23.1.0' // For notifications
+    implementation 'com.google.firebase:firebase-database:20.0.5' // Firebase Realtime Database (if needed)
+
 }
+apply plugin: 'com.google.gms.google-services'

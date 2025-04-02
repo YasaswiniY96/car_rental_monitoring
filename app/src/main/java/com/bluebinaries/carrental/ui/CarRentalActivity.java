@@ -1,4 +1,4 @@
-package com.example.carrental;
+package com.bluebinaries.carrental.ui;
 
 import android.os.Bundle;
 
@@ -8,7 +8,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+import com.bluebinaries.carrental.R;
+
+public class CarRentalActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,4 +23,6 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
+
+
 }
