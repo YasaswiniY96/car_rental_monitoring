@@ -34,12 +34,13 @@ dependencies {
     implementation libs.material
     implementation libs.activity
     implementation libs.constraintlayout
+    implementation libs.play.services.location
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
 
-    implementation 'com.google.firebase:firebase-messaging:23.1.0' // For notifications
-    implementation 'com.google.firebase:firebase-database:20.0.5' // Firebase Realtime Database (if needed)
+    implementation libs.firebase.messaging // For notifications using FCM
+    implementation libs.firebase.database // Firebase Realtime Database (if needed)
 
 }
 apply plugin: 'com.google.gms.google-services'
