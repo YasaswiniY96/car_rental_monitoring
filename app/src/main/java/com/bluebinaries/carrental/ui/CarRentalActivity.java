@@ -1,6 +1,5 @@
 package com.bluebinaries.carrental.ui;
 
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -15,7 +14,7 @@ import com.bluebinaries.carrental.util.PermissionUtils;
 
 public class CarRentalActivity extends AppCompatActivity {
 
-    private static final int LOCATION_PERMISSION_REQUEST = 1;
+//    private static final int LOCATION_PERMISSION_REQUEST = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,8 +48,8 @@ public class CarRentalActivity extends AppCompatActivity {
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (requestCode == LOCATION_PERMISSION_REQUEST && grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+//        if (requestCode == LOCATION_PERMISSION_REQUEST && grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
 //            startLocationUpdates();
-        }
+//        }
     }
 }
